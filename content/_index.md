@@ -6,7 +6,7 @@
 
 ## Architecture
 ---
-[!arch](https://github.com/pionion/pionion.github.io.src/blob/master/resources/logo/arch.png)
+![arch](https://github.com/pionion/pionion.github.io.src/raw/master/resources/logo/arch.png)
 
 ## Feature
 ---
