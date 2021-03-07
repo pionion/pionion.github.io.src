@@ -1,5 +1,5 @@
 ---
-title: ion-sdk-js
+title: 2. ion-sdk-js
 toc: true
 weight: 5
 ---
