@@ -4,21 +4,63 @@ toc: true
 weight: 5
 ---
 
-## Quick Start
+### ☕️How to use
 
-### ☕️Running the grpc signaling server
+#### 1. Build and run by docker
+---
 
-If you have a local golang environment already setup, simply run
+##### 1. run Nats and Redis
+```
+docker pull nats
+docker run -p 4222:4222 -p 6222:6222 -p 8222:8222 nats
+
+docker pull redis:6.0.9 nats
+docker run -p 6379:6379 redis:6.0.9
 
 ```
-go build ./cmd/signal/grpc/main.go && ./main -c config.toml
+check nats and redis is running
+```
+lsof -i:4222
+lsof -i:6379
+```
+##### 2. build ion-islb
+
+```
+docker build -f ./docker/islb.Dockerfile -t pionwebrtc/ion:latest-islb .
 ```
 
-If you prefer a containerized environment, you can use the included Docker image
-
+##### 3. run ion-islb
 ```
-docker run -p 50051:50051 -p 5000-5020:5000-5020/udp pionwebrtc/ion-sfu:latest-grpc
+docker run -p -p 6061:6061/tcp --network host -v $PWD/configs/islb.toml:/configs/islb.toml pionwebrtc/ion:latest-islb
 ```
 
+#### 2. Build and run with source code
+---
 
+tips: 
+* script support ubuntu/mac/centos, you can build|start them yourself if you are using windows or IDE 
+* script will start a daemon, save pid to ./configs and export log to ./logs
+
+##### 1. run Nats and Redis
+```
+./scripts/redisStart.sh
+./scripts/natsStart.sh
+```
+##### 2. build ion-islb
+tips: make sure you have installed golang
+```
+go build -o bin/islb cmd/islb/main.go
+```
+##### 3. run ion-islb
+```
+./scripts/islbStart.sh
+```
+or
+```
+bin/islb -c configs/islb.toml
+```
+##### 4. stop ion-islb
+```
+./scripts/islbStop.sh
+```
 

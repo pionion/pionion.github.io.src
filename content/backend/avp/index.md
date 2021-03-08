@@ -4,21 +4,57 @@ toc: true
 weight: 5
 ---
 
-## Quick Start
+### ☕️How to use
 
-### ☕️Running the grpc signaling server
+#### 1. Build and run by docker
+---
 
-If you have a local golang environment already setup, simply run
+##### 1. run Nats
+```
+docker pull nats
+docker run -p 4222:4222 -p 6222:6222 -p 8222:8222 nats
+```
+check nats is running
+```
+lsof -i:4222
+```
+##### 2. build ion-avp
 
 ```
-go build ./cmd/signal/grpc/main.go && ./main -c config.toml
+docker build -f ./docker/avp.Dockerfile -t pionwebrtc/ion:latest-avp .
 ```
 
-If you prefer a containerized environment, you can use the included Docker image
-
+##### 3. run ion-avp
 ```
-docker run -p 50051:50051 -p 5000-5020:5000-5020/udp pionwebrtc/ion-sfu:latest-grpc
+docker run -p -p 6063:6063/tcp --network host -v $PWD/configs/avp.toml:/configs/avp.toml pionwebrtc/ion:latest-avp
 ```
 
+#### 2. Build and run with source code
+---
 
+tips: 
+* script support ubuntu/mac/centos, you can build|start them yourself if you are using windows or IDE 
+* script will start a daemon, save pid to ./configs and export log to ./logs
+
+##### 1. run Nats
+```
+./scripts/natsStart.sh
+```
+##### 2. build ion-avp
+tips: make sure you have installed golang
+```
+go build -o bin/avp cmd/avp/main.go
+```
+##### 3. run ion-avp
+```
+./scripts/avpStart.sh
+```
+or
+```
+bin/avp -c configs/avp.toml
+```
+##### 4. stop ion-avp
+```
+./scripts/avpStop.sh
+```
 
