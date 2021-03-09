@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "ion"
 theme = "hugo-theme-learn"
 [params]
-  editURL = "https://github.com/pionion/pionion.github.io.source/edit/master/content/"
+  editURL = "https://github.com/pionion/pionion.github.io.src/edit/master/content/"
   description = "Documentation for ion"
   author = "ion"
   autoNav = false

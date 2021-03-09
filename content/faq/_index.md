@@ -1,5 +1,5 @@
 ---
-title: 4. FAQ
+title: 9. FAQ
 weight: 5
 icon: "<b>2. </b>"
 ---
@@ -8,7 +8,7 @@ icon: "<b>2. </b>"
 | key words  | info |
 | ------------- | ------------- |
 | BIZ | Business signal server  |
-| ISLB | Business signal server |
+| ISLB | intelligent server load balancing server|
 |[SFU](https://webrtcglossary.com/sfu/)|Selective Forwarding Unit| 
 |AVP|Audio video process server| 
 |[MCU](https://webrtcglossary.com/mcu/)|Multipoint Control Unit|

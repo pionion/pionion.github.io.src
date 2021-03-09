@@ -3,6 +3,16 @@ title: 3. ion-sfu
 toc: true
 weight: 5
 ---
+### Features
+
+- [x] High performance
+- [x] Two-PC per peer(O(n) port usage)
+- [x] Less signal exchange (some through datachannel)
+- [x] Unified plan semantics
+- [x] Audio/Video/Datachannel forwarding
+- [x] BWE(TWCC, REMB, RR/SR)
+- [x] ARQ(PLI, NACK)
+- [x] Simulcast
 
 ### ☕️How to use
 
