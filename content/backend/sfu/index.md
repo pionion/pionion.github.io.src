@@ -49,16 +49,16 @@ tips:
 
 ##### 1. run Nats
 ```
-./scripts/natsStart.sh
+./scripts/deps start nats-server
 ```
 ##### 2. build ion-sfu
 tips: make sure you have installed golang
 ```
-go build -o bin/sfu cmd/sfu/grpc/main.go
+go build -o bin/sfu cmd/sfu/main.go
 ```
 ##### 3. run ion-sfu
 ```
-./scripts/sfuStart.sh
+./scripts/service start sfu
 ```
 or
 ```
@@ -66,6 +66,6 @@ bin/sfu -c configs/sfu.toml
 ```
 ##### 4. stop ion-sfu
 ```
-./scripts/sfuStop.sh
+./scripts/service stop sfu
 ```
 

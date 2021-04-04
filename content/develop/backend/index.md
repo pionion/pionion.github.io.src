@@ -8,12 +8,12 @@ Other services are similar
 
 #### 1. Main
 The main func did these things:
-* parse params
+* parse command line params
 * init modules
 * register grpc services
 * start server
 ```
-cmd/biz/grpc/main.go
+cmd/biz/main.go
 ```
 
 #### 2. Real business handle
@@ -26,11 +26,11 @@ pkg/node/biz/server.go
 * room and peer management
 * signal handle like: join/leave and so on
 * exchange signal with other module/service by grpc/nats
-#### 3. Add your code
+#### 3. Add/Modify your code
 
 #### 4. Build
 ```
-go build -o bin/biz cmd/biz/grpc/*.go
+go build -o bin/biz cmd/biz/*.go
 ```
 
 #### 5. Run
@@ -41,11 +41,11 @@ log print in your console
 
 your can also use scripts to start a daemon:
 ```
-./scripts/bizStart.sh
+./scripts/service start biz
 ```
 
 #### 5. Test
 test your code with client(web/app)
 
 #### 6. Other services
-you can replace biz with sfu/islb/avp and repeat 1~5 steps
+They are the same archeture, you can replace biz with sfu/islb/avp and repeat 1~5 steps

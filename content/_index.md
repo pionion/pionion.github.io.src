@@ -3,6 +3,9 @@
 ---
 #### ION is a distributed real-time communication system, let people communicate anydevice, anytime, anywhere!
 
+## ❇️License
+* [MIT License](https://opensource.org/licenses/MIT)
+
 
 ## 📖Architecture
 ---
@@ -30,12 +33,15 @@
 
 ---
 ### Back-End Stacks
-  - [x] Written by pure GO, fast development
+  - [x] Fast development, written by golang
   - [x] High performance, continuous optimization
   - [x] Distributed architecture, decoupling by [nats](https://nats.io)
   - [x] Support K8s/docker, easy to scale
   - [x] Support grpc signal, easy to extend to jsonrpc
-  - [x] Support webrtc stacks, base on [pion](https://github.com/pion/webrtc): NACK/PLI/TWCC/REMB/RR/SR/Simulcast/SVC
+  - [x] Support webrtc stacks, base on [pion/webrtc](https://github.com/pion/webrtc): NACK/PLI/TWCC/REMB/RR/SR/Simulcast/SVC
+
+Tips:
+You can learn go/webrtc/flutter/.. first if you are a newbie of RTC, see [faq](./faq)
 
 
 

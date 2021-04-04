@@ -27,4 +27,6 @@ SDK<---grpc--->BIZ<---mq--->ISLB<---mq--->BIZ<---grpc--->SDK
 SDK<----webrtc---->SFU<----webrtc---->SDK
 ```
 
-Tips: keys words see faq
+Tips: 
+* keys words see faq
+* you must config stun server or nat1v1 in config.toml

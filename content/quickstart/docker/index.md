@@ -7,7 +7,7 @@ icon: "<b>2. </b>"
 ## Docker
 ---
 
-## How to use
+## 1. Create network
 
 Docker commands require the ionnet docker network
 
@@ -17,7 +17,7 @@ First run:
 docker network create ionnet
 ```
 
-### Deployment
+## 2. Deployment
 
 #### 1. Clone
 
@@ -47,12 +47,15 @@ Ensure the following ports are exposed or forwarded.
 You can find them in *.toml
 
 ```
-5000-5200/udp
+15000-15200/udp
 ```
+Tips:
+max clients=port-range/2
+
+make port-range bigger in production
 
 #### 5. Chat
 
 Head over to [Ion Web App](https://github.com/pion/ion-app-web) to bring up the front end.
 
-The web app repo also contains examples of exposing the ion biz websocket via reverse proxy with automatic SSL.
 

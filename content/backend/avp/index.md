@@ -38,7 +38,7 @@ tips:
 
 ##### 1. run Nats
 ```
-./scripts/natsStart.sh
+./scripts/deps start nats-server
 ```
 ##### 2. build ion-avp
 tips: make sure you have installed golang
@@ -47,7 +47,7 @@ go build -o bin/avp cmd/avp/main.go
 ```
 ##### 3. run ion-avp
 ```
-./scripts/avpStart.sh
+./scripts/service start avp
 ```
 or
 ```
@@ -55,6 +55,6 @@ bin/avp -c configs/avp.toml
 ```
 ##### 4. stop ion-avp
 ```
-./scripts/avpStop.sh
+./scripts/service stop avp
 ```
 

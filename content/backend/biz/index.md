@@ -1,5 +1,5 @@
 ---
-title: 1. ion-biz
+title: 2. ion-biz
 toc: true
 weight: 5
 ---
@@ -14,8 +14,8 @@ weight: 5
 docker pull nats
 docker run -p 4222:4222 -p 6222:6222 -p 8222:8222 nats
 
-docker pull redis:6.0.9 nats
-docker run -p 6379:6379 redis:6.0.9
+docker pull redis
+docker run -p 6379:6379 redis
 
 ```
 check nats and redis is running
@@ -43,17 +43,17 @@ tips:
 
 ##### 1. run Nats and Redis
 ```
-./scripts/redisStart.sh
-./scripts/natsStart.sh
+./scripts/deps start redis
+./scripts/deps start nats-server
 ```
 ##### 2. build ion-biz
 tips: make sure you have installed golang
 ```
-go build -o bin/biz cmd/biz/grpc/main.go
+go build -o bin/biz cmd/biz/main.go
 ```
 ##### 3. run ion-biz
 ```
-./scripts/bizStart.sh
+./scripts/service start biz
 ```
 or
 ```
@@ -61,6 +61,6 @@ bin/biz -c configs/biz.toml
 ```
 ##### 4. stop ion-biz
 ```
-./scripts/bizStop.sh
+./scripts/service stop biz
 ```
 

@@ -9,11 +9,10 @@ This show how to do load-testing about https://github.com/pion/ion-sfu
 * Two High performance server(cpu not shared)
     * Server A
     * Server B
-    * You can choose the core number you wanted
 
 #### 2. Build and run ion-sfu
 * SSH login A
-* Build and run ion-sfu(allrpc)
+* Build and run ion-sfu(allrpc version)
 
 #### 3. Build and run ion-load-tool
 * SSH login B
@@ -30,4 +29,4 @@ This show how to do load-testing about https://github.com/pion/ion-sfu
 * open pubsub example with chrome(https://github.com/pion/ion-sfu in example)
 * see fps and bandwidth from chrome://webrtc-internals
 
-Tips:Make sure your pubsub index.html use the same session with ion-load-tool!
+Tips:Make sure your pubsub index.html join the same session with ion-load-tool!

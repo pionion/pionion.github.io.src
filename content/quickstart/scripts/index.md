@@ -7,43 +7,43 @@ icon: "<b>2. </b>"
 ## 1. Install Deps
 
 ```
-./scripts/installDeps.sh
+./scripts/deps_inst
 ```
 
 It will install all depend modules, support mac, ubuntu, centos
 Check these modules installed:nats-server redis
 
-## 2. Make Key
+## 2. Run deps
 
 ```
-./scripts/makeKey.sh
+./scripts/deps start redis
+./scripts/deps start nats-server
 ```
+Check redis and nats-server running
 
-It will generate key files to configs
-
-## 3. Run
-
-First Time
+On mac and linux, use ps:
 
 ```
-./scripts/allStart.sh
+ps -ef|grep -E "redis|nats"
+```
+
+## 3. Run all services
+
+First time:
+
+```
+./scripts/all start
 ```
 
 It will start all services we need
 
+Next time:
 ```
-./scripts/allStop.sh
-```
-
-It will stop all services
-
-```
-./scripts/allRestart.sh
+./scripts/all restart
 ```
 
 It will restart all services we need
 
-*There is also individual module script in scripts folder, you can use them when you debug individual module*
 
 ## 4. Test 
 
