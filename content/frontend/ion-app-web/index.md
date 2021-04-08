@@ -23,10 +23,14 @@ ion web app
 Install node modules
 
 ```
+cd ion-app-web
+
 npm i
 ```
 
 #### Run
+
+Make sure ion server is running.
 
 Start dev server
 
