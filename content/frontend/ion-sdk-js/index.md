@@ -58,3 +58,13 @@ dc.onopen = () => dc.send("hello world")
 client.close();
 ```
 
+### 3. example
+
+#### 1. This show how to write a pubsub example
+https://github.com/pion/ion-sfu/tree/master/examples/pubsubtest
+
+Tips: you should open more than two this example for testing
+
+
+#### 2. This show how to use simulcast and datachannel
+https://github.com/pion/ion-sfu/tree/master/examples/echotest

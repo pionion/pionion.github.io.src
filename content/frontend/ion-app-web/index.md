@@ -4,15 +4,9 @@ toc: true
 weight: 5
 ---
 
-## ☕️How to use
+## How to Local Dev
 
-# ion-app-web
-
-ion web app
-
-### Local Dev
-
-#### Setup
+### 1. Setup
 
 Install node modules
 
@@ -22,7 +16,7 @@ cd ion-app-web
 npm i
 ```
 
-#### Run
+### 2. Run
 
 Make sure ion server is running.
 
