@@ -47,6 +47,18 @@ RUN GOPROXY="https://goproxy.io" CGO_ENABLED=0 GOOS=linux go build -a -installsu
 That means the process didn't closed in right way, you shoud kill it by hand.
 use `ps -ef|grep -E "islb|biz|sfu|avp"` to see which one is alive
 
-### 7. "Didn't find xxx Node"
-Make sure running islb frist
-Restart the xxx Node
+### 7. How to deploy behind a nat?
+Two ways:
+
+1. set stun server in sfu.toml
+```
+[[webrtc.iceserver]]
+urls = ["stun:stun.stunprotocol.org:3478"]
+```
+
+2. set nat1to1 in sfu.toml if you mapped WAN_IP to LAN_IP
+```
+[webrtc.candidates]
+nat1to1 = ["your_WAN_ip"]
+icelite = true
+```
