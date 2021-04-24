@@ -12,7 +12,7 @@ icon: "<b>2. </b>"
 #### 🌲Production
 - [Tribe Health](https://www.tribehealthsolutions.com/)
 - [100ms](https://100ms.live)
-- [Tandem](https://github.com/cryptagon/ion-cluster)
+- [Tandem](https://tandem.chat/)
 
 #### 👍OpenSource
 - [noiR](https://github.com/net-prophet/noiR)
