@@ -1,5 +1,5 @@
 ---
-title: 5. FAQ
+title: 6. FAQ
 weight: 5
 icon: "<b>2. </b>"
 ---
