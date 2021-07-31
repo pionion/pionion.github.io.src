@@ -26,7 +26,7 @@ docker build -f ./docker/avp.Dockerfile -t pionwebrtc/ion:latest-avp .
 
 ##### 3. run ion-avp
 ```
-docker run -p -p 6063:6063/tcp --network host -v $PWD/configs/avp.toml:/configs/avp.toml pionwebrtc/ion:latest-avp
+docker run -p 6063:6063/tcp --network host -v $PWD/configs/avp.toml:/configs/avp.toml pionwebrtc/ion:latest-avp
 ```
 
 #### 2. Build and run with source code
