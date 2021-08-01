@@ -1,5 +1,5 @@
 ---
-title: 1. Deploy with caddy
+title: 2. Deploy online by hand
 weight: 5
 icon: "<b>2. </b>"
 ---
@@ -7,9 +7,8 @@ icon: "<b>2. </b>"
 ## 1. Prepare a server
 
 Tips: you should make sure:
-* All the ports that ion needed is open on your server firewall
-* All the ports that ion needed is mapped to your server if it's behind a NAT(This is not needed if your server has a  External Internet IP)
-* You can config them in your cloud server provider console
+* All the ports that ion needed opened on server firewall
+* All the ports that ion needed are mapped to your server if it's behind a NAT(This is not needed if your server has a  External Internet IP)
 
 ## 2. Make sure all the module installed
 
@@ -19,14 +18,13 @@ Tips: see the "quickstart" section
 
 In my scene, i deploy ion with scripts
 
-Modify the port in configs/biz.toml, change the port 5551 to 5552
+Modify the port in configs/signal.toml, change the port 5551 to 5552
 
 ```
 #listen ip port
 host = "0.0.0.0"
 port = "5552"
 ```
-
 
 Modify the port in configs/sfu.toml, change to server external ip:
 
@@ -41,7 +39,7 @@ then restart them
 
 ## 4. Deploy canddy
 
-### 1. Prepare a real domain which can be used online
+### 1. Prepare a real domain
 
 config your domain dns to your server
 

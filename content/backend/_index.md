@@ -15,9 +15,4 @@ icon: "<b>2. </b>"
   - [x] [SFU](https://github.com/pion/ion/tree/master/cmd/sfu)--- WebRTC server
     - [x] webrtc media stream publish/subscribe
     - [x] integrate [ion-sfu](https://github.com/pion/ion-sfu), independent sfu package/server
-  - [x] [AVP](https://github.com/pion/ion/tree/master/cmd/avp)---Audio|Video Process Server
-    - [x] Recoder(ML/AVMixer WIP)
-    - [x] integrate [ion-avp](https://github.com/pion/ion-avp), independent avp package/server
-
-
 
