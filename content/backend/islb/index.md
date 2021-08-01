@@ -31,7 +31,7 @@ docker build -f ./docker/islb.Dockerfile -t pionwebrtc/ion:latest-islb .
 
 ##### 3. run ion-islb
 ```
-docker run -p -p 6061:6061/tcp --network host -v $PWD/configs/islb.toml:/configs/islb.toml pionwebrtc/ion:latest-islb
+docker run -p 6061:6061/tcp --network host -v $PWD/configs/islb.toml:/configs/islb.toml pionwebrtc/ion:latest-islb
 ```
 
 #### 2. Build and run with source code
