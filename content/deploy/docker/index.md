@@ -25,7 +25,7 @@ git clone https://github.com/pion/ion
 cd ion
 ```
 
-Modify configs/sfu.toml, update server public ip:
+Modify configs/docker/sfu.toml, update server public ip:
 
 ```
 nat1to1 = ["xxx.xxx.xxx.xxx"]
