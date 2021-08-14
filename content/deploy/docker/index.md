@@ -8,7 +8,7 @@ icon: "<b>2. </b>"
 
 Tips: you should make sure:
 
-* All the ports that ion needed opened on server firewall(like: 80/443(TCP) 5000(UDP) 3478(TCP/UDP)), you can find them in `configs/*.toml`
+* All the ports that ion needed opened on server firewall(like: 80/443(TCP) 5000(UDP) 3478(TCP/UDP)), you can find them in `configs/docker/*.toml`
 * All the ports that ion needed are mapped to your server if it's behind a NAT(This is not needed if your server has a  External Internet IP)
 * Hardware: 10GB+ disk, 2GB+ mem, non-shared cpu is better
 * A real domain dns to your server
