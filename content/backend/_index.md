@@ -6,7 +6,7 @@ icon: "<b>2. </b>"
 
 ### Back-End Services
   - [x] [ISLB](https://github.com/pion/ion/tree/master/cmd/islb)--- Dispatch Server
-    - [x] load-banlance
+    - [x] load-balance
     - [x] node discovery
     - [x] read/write redis
   - [x] [BIZ](https://github.com/pion/ion/tree/master/cmd/biz)--- Signal Server
