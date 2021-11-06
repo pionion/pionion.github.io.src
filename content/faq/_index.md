@@ -20,7 +20,7 @@ icon: "<b>2. </b>"
 |WebRTC For The Curious|https://webrtcforthecurious.com|WebRTC For The Curious is an Open Source book written for those that are always looking for more
 |webrtc.org |https://webrtc.org| webrtc website
 |webrtc samples|https://webrtc.github.io/samples| webrtc demos
-|pion-webrtc|https://github.com/pion/webrtc|golang webrtc statck
+|pion-webrtc|https://github.com/pion/webrtc|golang webrtc stack
 |ion|https://github.com/pion/ion|distributed rtc system
 
 #### 3. How to develop
