@@ -9,7 +9,7 @@ icon: "<b>2. </b>"
     - [x] load-banlance
     - [x] node discovery
     - [x] read/write redis
-  - [x] [BIZ](https://github.com/pion/ion/tree/master/cmd/biz)--- Signal Server
+  - [x] [BIZ](https://github.com/pion/ion/tree/master/cmd/signal)--- Signal Server
     - [x] exchange signal from sdk to biz
     - [x] business logic, such as room/peer/auth logic
   - [x] [SFU](https://github.com/pion/ion/tree/master/cmd/sfu)--- WebRTC server
