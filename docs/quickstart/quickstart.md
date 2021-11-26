@@ -85,7 +85,7 @@ make docker-start-services
 ### 3. Chat
 
 ```
-open example/ion-echo/index.html
+open examples/ion-echo/index.html
 ```
 
   </TabItem>
